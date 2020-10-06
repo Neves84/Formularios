@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title>Formulário</title>
+        <style>
+            p.agrp{
+                border-bottom: 2 px solid #445588;
+                background-color: rgb(197, 166, 29);
+            }
+            #coment{
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 align="center"><font color="#c7cbeb"></font></h2>
+
+        <form action="enviar.php" method="POSt" name="CadastroCliente">
+            <table border="0" align="center" cellpadding="5" >
+                
+                <tr>
+                    
+                    <td>
+                        <p class="agrp">SISTEMA DE GESTÃO ACADEMICA</p>
+                        <p>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</p>
+                        <label for="nome">Login:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                        <input type="text" id="nome" size="20" maxlength="30" placeholder=""/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Senha:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                        <input type="password" id="senha" size="20" maxlength="30" placeholder=""/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="status">Status:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                        <select id="escolaridade" name="escolaridade">
+                            <option botton="select" selected="selected">-- Inativo --</option>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Tipo:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                        <input type="radio" id="Tipo" name="Tipo" value="Tecnico"/>
+                        <label for="Tipo">Tecnico</label>
+                        <input type="radio" id="Tipo" name="Tipo" value="Professor" />
+                        <label for="Tipo">Professor</label>
+                        <input type="radio" id="Tipo" name="Tipo" value="Aluno" />
+                        <label for="Tipo">Aluno</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Data Criação:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                        <input type="date" id="data" name="data" size="40" maxlength="8" placeholder=""/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Perfil:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                        <input type="radio" id="Perfil" name="Perfil" value="Convidado"/>
+                        <label for="Perfil">Convidado</label>
+                        <input type="radio" id="Perfil" name="Perfil" value="Adiministrador" />
+                        <label for="Perfil">Professor</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                            <label for="Observações">Observações:</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <textarea cols="30" rows="5" id="coment" name="coment" placeholder=""></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Modulos:</label>
+                               
+                        <input type="checkbox" id="rock" name="rock" value="rock"/>
+                        <label for="rock">Compras</label>
+                        
+                        <input type="checkbox" id="sertanejo" name="sertanejo" value="sertanejo"/>
+                        <label>Biblioteca</label>
+                        
+                        <input type="checkbox" id="pop" name="pop" value="pop"/>
+                        <label for="pop">Academico</label><br>
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" id="eletro" name="eletro" value="eletronica"/>
+                        <label for="eletro">Documentação</label>
+                        
+                        <input type="checkbox" id="paogde" name="pagode" value="pogode"/>
+                        <label for="pagode">Recursos Humanos</label>
+                        
+                       
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="Cadastrar">
+                        <input type="button" value="Excluir">
+                    </td>
+                </tr>
+                
+               
+
+                
+               
+            </table>
+        </form>
+    </body>
+</html>
